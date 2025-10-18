@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List - Product Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+        }
+
+        .book-card img {
+            height: 250px;
+            object-fit: cover;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        .card {
+            border-radius: 1rem;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-buy {
+            background-color: #ff6f61;
+            border: none;
+        }
+
+        .btn-buy:hover {
+            background-color: #ff3d3d;
+        }
+
+        .back-btn {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h2 class="text-center mb-5 fw-bold">📚 Book List</h2>
+
+        <div class="row g-4">
+            <!-- Book 1 -->
+            <div class="col-md-4">
+                <div class="card book-card h-100">
+                    <img src="https://covers.openlibrary.org/b/id/10523362-L.jpg" class="card-img-top" alt="Book Cover">
+                    <div class="card-body">
+                        <h5 class="card-title">The Silent Patient</h5>
+                        <p class="card-text">A thrilling psychological mystery about a woman’s act of violence against her husband—and the therapist obsessed with uncovering her motive.</p>
+                        <p><strong>Author:</strong> Alex Michaelides</p>
+                        <p><strong>Price:</strong> ₹499</p>
+                        <p><strong>Stock Remaining:</strong> 7 copies</p>
+                        <a href="#" class="btn btn-buy text-white">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="col-md-4">
+                <div class="card book-card h-100">
+                    <img src="https://covers.openlibrary.org/b/id/11109763-L.jpg" class="card-img-top" alt="Book Cover">
+                    <div class="card-body">
+                        <h5 class="card-title">Atomic Habits</h5>
+                        <p class="card-text">Learn how to build good habits and break bad ones with practical strategies from this bestselling guide.</p>
+                        <p><strong>Author:</strong> James Clear</p>
+                        <p><strong>Price:</strong> ₹399</p>
+                        <p><strong>Stock Remaining:</strong> 10 copies</p>
+                        <a href="#" class="btn btn-buy text-white">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="col-md-4">
+                <div class="card book-card h-100">
+                    <img src="https://covers.openlibrary.org/b/id/11353257-L.jpg" class="card-img-top" alt="Book Cover">
+                    <div class="card-body">
+                        <h5 class="card-title">Ikigai</h5>
+                        <p class="card-text">Discover the Japanese secret to a long and happy life with wisdom and stories from Okinawa.</p>
+                        <p><strong>Author:</strong> Héctor García, Francesc Miralles</p>
+                        <p><strong>Price:</strong> ₹299</p>
+                        <p><strong>Stock Remaining:</strong> 16 copies</p>
+                        <a href="#" class="btn btn-buy text-white">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Home Button -->
+        <div class="text-center back-btn">
+            <a href="{% url 'index' %}" class="btn btn-secondary">⬅️ Back to Home</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
